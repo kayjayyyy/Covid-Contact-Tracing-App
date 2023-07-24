@@ -25,28 +25,28 @@ class StartScreen(tk.Tk):
         self.full_name_entry = tk.Entry(self, width=45)
         self.full_name_entry.place(x=150, y=80)
         
-        # Age label and entry
+        # Age label and entry box
         age_label = tk.Label(self, text="Age", bg="#E3DAFF")
         age_label.place(x=108, y=110)
 
         self.age_entry = tk.Entry(self, width=45)
         self.age_entry.place(x=150, y=110)
         
-        # Phone number label and entry
+        # Phone number label and entry box
         phone_number_label = tk.Label(self, text="Phone Number", bg="#E3DAFF")
         phone_number_label.place(x=50, y=140)
 
         self.phone_number_entry = tk.Entry(self, width=45)
         self.phone_number_entry.place(x=150, y=140)
         
-        # Email label and entry
+        # Email label and entry box
         email_label = tk.Label(self, text="Email", bg="#E3DAFF")
         email_label.place(x=100, y=170)
 
         self.email_entry = tk.Entry(self, width=45)  
         self.email_entry.place(x=150, y=170)
 
-        # Adress label and entry
+        # Adress label and entry box
         address_label = tk.Label(self, text="Address", bg="#E3DAFF")
         address_label.place(x=88, y=200)
 
