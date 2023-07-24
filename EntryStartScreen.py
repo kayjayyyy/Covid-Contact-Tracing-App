@@ -38,6 +38,13 @@ class StartScreen(tk.Tk):
 
         self.phone_number_entry = tk.Entry(self, width=45)
         self.phone_number_entry.place(x=150, y=140)
+        
+        # Email label and entry
+        email_label = tk.Label(self, text="Email", bg="#E3DAFF")
+        email_label.place(x=100, y=170)
+
+        self.email_entry = tk.Entry(self, width=45)  
+        self.email_entry.place(x=150, y=170)
 
         # Adress label and entry
         address_label = tk.Label(self, text="Address", bg="#E3DAFF")
