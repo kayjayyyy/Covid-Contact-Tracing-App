@@ -18,3 +18,9 @@ class StartScreen(tk.Tk):
         title = tk.Label(self, text="COVID CONTACT TRACING FORM", font=("Source Sans Pro", 15, "bold"), bg="#E4CCB4")
         title.place(x=83, y=20)
         
+        # Name label and entry box
+        full_name_label = tk.Label(self, text="Full Name", bg="#E3DAFF")
+        full_name_label.place(x=78, y=80)
+
+        self.full_name_entry = tk.Entry(self, width=45)
+        self.full_name_entry.place(x=150, y=80)
