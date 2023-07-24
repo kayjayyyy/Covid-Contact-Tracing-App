@@ -141,3 +141,13 @@ class StartScreen(tk.Tk):
 
         no_button_7 = ttk.Radiobutton(self, variable=self.qs7, value=0, text="No", style="Custom.TRadiobutton")
         no_button_7.place(x=370, y=465)
+        
+        # Symptoms no.8 Muscle or body pains
+        symptoms_8_label = tk.Label(self, text="Muscle or body pains?", font=("Source Sans Pro", 11, "bold"), background="#E3DAFF")
+        symptoms_8_label.place(x=80, y=495)
+
+        yes_button_8 = ttk.Radiobutton(self, variable=self.qs8, value=1, text="Yes", style="Custom.TRadiobutton")
+        yes_button_8.place(x=280, y=495)
+
+        no_button_8 = ttk.Radiobutton(self, variable=self.qs8, value=0, text="No", style="Custom.TRadiobutton")
+        no_button_8.place(x=370, y=495)
