@@ -191,3 +191,18 @@ class StartScreen(tk.Tk):
         # Submit button
         submit_button = tk.Button(self, text="Submit", command=self.submit_response)
         submit_button.place(x=188, y=750)
+        
+    def submit_response(self):
+        full_name = self.full_name_entry.get()
+        age = self.age_entry.get()
+        phone_number = self.phone_number_entry.get()
+        email = self.email_entry.get()
+        address = self.address_entry.get()
+        covid_symptoms = ["No" if value == 0 else "Yes" for value in [self.qs1.get(), self.qs2.get(), self.qs3.get(), self.qs4.get(),
+                self.qs5.get(), self.qs6.get(), self.qs7.get(), self.qs8.get(), self.qs9.get(), self.qs10.get()]]
+            
+        data = [full_name, age, phone_number, email, address + covid_symptoms]
+        file = open("Responses.csv", mode="a", newline="")
+        response = csv.writer(file)
+        response.writerow(data)
+        file.close()
