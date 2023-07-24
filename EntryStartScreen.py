@@ -151,3 +151,13 @@ class StartScreen(tk.Tk):
 
         no_button_8 = ttk.Radiobutton(self, variable=self.qs8, value=0, text="No", style="Custom.TRadiobutton")
         no_button_8.place(x=370, y=495)
+        
+        # Symptoms no. 9 Headache
+        symptoms_9_label = tk.Label(self, text="Headache?", font=("Source Sans Pro", 11, "bold"), background="#E3DAFF")
+        symptoms_9_label.place(x=80, y=525)
+        
+        yes_button_9 = ttk.Radiobutton(self, variable=self.qs9, value=1, text="Yes", style="Custom.TRadiobutton")
+        yes_button_9.place(x=280, y=525)
+        
+        no_button_9 = ttk.Radiobutton(self, variable=self.qs9, value=0, text="No", style="Custom.TRadiobutton")
+        no_button_9.place(x=370, y=525)
