@@ -38,3 +38,10 @@ class StartScreen(tk.Tk):
 
         self.phone_number_entry = tk.Entry(self, width=45)
         self.phone_number_entry.place(x=150, y=140)
+
+        # Adress label and entry
+        address_label = tk.Label(self, text="Address", bg="#E3DAFF")
+        address_label.place(x=88, y=200)
+
+        self.address_entry = tk.Entry(self, width=45) 
+        self.address_entry.place(x=150, y=200)
