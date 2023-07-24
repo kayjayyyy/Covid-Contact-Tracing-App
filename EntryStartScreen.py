@@ -56,3 +56,18 @@ class StartScreen(tk.Tk):
         # Main question for symptoms
         questions = tk.Label(self, text="Do you experience any of the following in the last 14 days?", font=("Source Sans Pro", 12, "bold"), bg="#E3DAFF")
         questions.place(x=26, y=250)
+        
+        # Yes and No Radiobutton
+        self.qs1 = tk.IntVar(value="")
+        self.qs2 = tk.IntVar(value="")
+        self.qs3 = tk.IntVar(value="")
+        self.qs4 = tk.IntVar(value="")
+        self.qs5 = tk.IntVar(value="")
+        self.qs6 = tk.IntVar(value="")
+        self.qs7 = tk.IntVar(value="")
+        self.qs8 = tk.IntVar(value="")
+        self.qs9 = tk.IntVar(value="")
+        self.qs10 = tk.IntVar(value="")
+
+        style = ttk.Style()
+        style.configure("Custom.TRadiobutton", background="#E3DAFF", fg="black", font=("Source Sans Pro", 9))
