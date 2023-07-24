@@ -199,6 +199,10 @@ class StartScreen(tk.Tk):
     def to_start_screen(self):
         self.destroy()
         
+    def success_window_message(self):
+        messagebox.showinfo("Thank you!", "Your response has been successfully saved")
+        self.destroy()
+        
     def submit_response(self):
         full_name = self.full_name_entry.get()
         age = self.age_entry.get()
@@ -213,7 +217,3 @@ class StartScreen(tk.Tk):
         response = csv.writer(file)
         response.writerow(data)
         file.close()
-        
-    def success_window_message(self):
-        messagebox.showinfo("Thank you!", "Your response has been successfully saved")
-        self.destroy()
