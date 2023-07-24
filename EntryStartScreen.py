@@ -206,3 +206,7 @@ class StartScreen(tk.Tk):
         response = csv.writer(file)
         response.writerow(data)
         file.close()
+        
+    def success_window_message(self):
+        messagebox.showinfo("Thank you!", "Your response has been successfully saved")
+        self.destroy()
