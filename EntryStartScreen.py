@@ -161,3 +161,19 @@ class StartScreen(tk.Tk):
         
         no_button_9 = ttk.Radiobutton(self, variable=self.qs9, value=0, text="No", style="Custom.TRadiobutton")
         no_button_9.place(x=370, y=525)
+        
+        # Question no.10 Exposure
+        question_10_label = tk.Label(self, text="Have you had exposure to a", font=("Source Sans Pro", 10, "bold"), background="#E3DAFF")
+        question_10_label.place(x=55, y=555)
+        
+        question_10_label = tk.Label(self, text="probable or confirmed case in", font=("Source Sans Pro", 10, "bold"), background="#E3DAFF")
+        question_10_label.place(x=48, y=575)
+        
+        question_10_label = tk.Label(self, text="the last 14 days?", font=("Source Sans Pro", 10, "bold"), background="#E3DAFF")
+        question_10_label.place(x=85, y=595)
+        
+        yes_button_10 = ttk.Radiobutton(self, variable=self.qs10, value=1, text="Yes", style="Custom.TRadiobutton")
+        yes_button_10.place(x=280, y=575)
+        
+        no_button_10 = ttk.Radiobutton(self, variable=self.qs10, value=0, text="No", style="Custom.TRadiobutton")
+        no_button_10.place(x=370, y=575)
