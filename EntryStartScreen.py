@@ -216,7 +216,7 @@ class StartScreen(tk.Tk):
                 self.qs5.get(), self.qs6.get(), self.qs7.get(), self.qs8.get(), self.qs9.get(), self.qs10.get()]]
         
         # Write/save to csv file 
-        data = [full_name, age, phone_number, email, address + covid_symptoms]
+        data = [full_name, age, phone_number, email, address] + covid_symptoms
         file = open("Responses.csv", mode="a", newline="")
         response = csv.writer(file)
         response.writerow(data)
