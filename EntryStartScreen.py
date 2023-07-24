@@ -8,7 +8,7 @@ import csv
 
 class StartScreen(tk.Tk):
 
-    def init(self):
+    def __init__(self):
         super().__init__()
 
         self.title("Covid Contact Tracing")
