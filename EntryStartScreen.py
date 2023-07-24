@@ -52,3 +52,7 @@ class StartScreen(tk.Tk):
 
         self.address_entry = tk.Entry(self, width=45) 
         self.address_entry.place(x=150, y=200)
+        
+        # Main question for symptoms
+        questions = tk.Label(self, text="Do you experience any of the following in the last 14 days?", font=("Source Sans Pro", 12, "bold"), bg="#E3DAFF")
+        questions.place(x=26, y=250)
