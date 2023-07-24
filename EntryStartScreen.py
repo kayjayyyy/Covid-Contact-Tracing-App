@@ -31,3 +31,10 @@ class StartScreen(tk.Tk):
 
         self.age_entry = tk.Entry(self, width=45)
         self.age_entry.place(x=150, y=110)
+        
+        # Phone number label and entry
+        phone_number_label = tk.Label(self, text="Phone Number", bg="#E3DAFF")
+        phone_number_label.place(x=50, y=140)
+
+        self.phone_number_entry = tk.Entry(self, width=45)
+        self.phone_number_entry.place(x=150, y=140)
