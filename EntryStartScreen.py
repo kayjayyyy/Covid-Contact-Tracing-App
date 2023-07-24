@@ -81,3 +81,13 @@ class StartScreen(tk.Tk):
 
         no_button_1 = ttk.Radiobutton(self, variable=self.qs1, value=0, text="No", style="Custom.TRadiobutton")
         no_button_1.place(x=370, y=285)
+        
+        # Symptoms no.2 Loss of taste
+        symptoms_2_label = ttk.Label(self, text="Loss of taste?", font=("Source Sans Pro", 11, "bold"), background="#E3DAFF")
+        symptoms_2_label.place(x=80, y=315)
+
+        yes_button_2 = ttk.Radiobutton(self, variable=self.qs2, value=1, text="Yes", style="Custom.TRadiobutton")
+        yes_button_2.place(x=280, y=315)
+
+        no_button_2= ttk.Radiobutton(self, variable=self.qs2, value=0, text="No", style="Custom.TRadiobutton")
+        no_button_2.place(x=370, y=315)
