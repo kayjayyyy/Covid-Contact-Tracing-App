@@ -177,3 +177,13 @@ class StartScreen(tk.Tk):
         
         no_button_10 = ttk.Radiobutton(self, variable=self.qs10, value=0, text="No", style="Custom.TRadiobutton")
         no_button_10.place(x=370, y=575)
+        
+        # Terms and Condition
+        terms = tk.Label(self, text="In line with the Data Privacy Act of 2012", font=("Source Sans Pro", 11, "bold"), background="#E3DAFF")
+        terms.place(x=110, y=655)
+        
+        terms_next = tk.Label(self, text="Please be informed that data gathered in this form", font=("Source Sans Pro", 10), background="#E3DAFF")
+        terms_next.place(x=100, y=675)
+        
+        terms_next_2 = tk.Label(self, text="will be treated with the utmost confidentiality.", font=("Source Sans Pro", 10), background="#E3DAFF")
+        terms_next_2.place(x=113, y=695)
