@@ -24,3 +24,10 @@ class StartScreen(tk.Tk):
 
         self.full_name_entry = tk.Entry(self, width=45)
         self.full_name_entry.place(x=150, y=80)
+        
+        # Age label and entry
+        age_label = tk.Label(self, text="Age", bg="#E3DAFF")
+        age_label.place(x=108, y=110)
+
+        self.age_entry = tk.Entry(self, width=45)
+        self.age_entry.place(x=150, y=110)
