@@ -192,6 +192,13 @@ class StartScreen(tk.Tk):
         submit_button = tk.Button(self, text="Submit", command=self.submit_response)
         submit_button.place(x=188, y=750)
         
+        # Back button
+        go_back_to_start = tk.Button(self, text="Back", command=self.to_start_screen)
+        go_back_to_start.place(x=260, y=750)
+    
+    def to_start_screen(self):
+        self.destroy()
+        
     def submit_response(self):
         full_name = self.full_name_entry.get()
         age = self.age_entry.get()
