@@ -131,3 +131,13 @@ class StartScreen(tk.Tk):
 
         no_button_6 = ttk.Radiobutton(self, variable=self.qs6, value=0, text="No", style="Custom.TRadiobutton")
         no_button_6.place(x=370, y=435)
+        
+        # Symptoms no.7 Nausea or vomiting
+        symptoms_7_label = tk.Label(self, text="Nausea or vomiting?", font=("Source Sans Pro", 11, "bold"), background="#E3DAFF")
+        symptoms_7_label.place(x=80, y=465)
+
+        yes_button_7 = ttk.Radiobutton(self, variable=self.qs7, value=1, text="Yes", style="Custom.TRadiobutton")
+        yes_button_7.place(x=280, y=465)
+
+        no_button_7 = ttk.Radiobutton(self, variable=self.qs7, value=0, text="No", style="Custom.TRadiobutton")
+        no_button_7.place(x=370, y=465)
