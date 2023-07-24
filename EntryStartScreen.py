@@ -228,3 +228,15 @@ class StartScreen(tk.Tk):
         self.phone_number_entry.delete(0, 'end')
         self.email_entry.delete(0, 'end')
         self.address_entry.delete(0, 'end')
+        
+        # Clear radiobuttons
+        self.qs1.set(0)
+        self.qs2.set(0)
+        self.qs3.set(0)
+        self.qs4.set(0)
+        self.qs5.set(0)
+        self.qs6.set(0)
+        self.qs7.set(0)
+        self.qs8.set(0)
+        self.qs9.set(0)
+        self.qs10.set(0)
