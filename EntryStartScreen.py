@@ -187,3 +187,7 @@ class StartScreen(tk.Tk):
         
         terms_next_2 = tk.Label(self, text="will be treated with the utmost confidentiality.", font=("Source Sans Pro", 10), background="#E3DAFF")
         terms_next_2.place(x=113, y=695)
+        
+        # Submit button
+        submit_button = tk.Button(self, text="Submit", command=self.submit_response)
+        submit_button.place(x=188, y=750)
