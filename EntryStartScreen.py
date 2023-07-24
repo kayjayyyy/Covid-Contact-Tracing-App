@@ -101,3 +101,13 @@ class StartScreen(tk.Tk):
 
         no_button_3 = ttk.Radiobutton(self, variable=self.qs3, value=0, text="No", style="Custom.TRadiobutton")
         no_button_3.place(x=370, y=345)
+        
+        # Symptoms no. 4 Cough or sore throat
+        question_4_label = tk.Label(self, text="Cough or sore throat?", font=("Source Sans Pro", 11, "bold"), background="#E3DAFF")
+        question_4_label.place(x=80, y=375)
+
+        yes_button_4 = ttk.Radiobutton(self, variable=self.qs4, value=1, text="Yes", style="Custom.TRadiobutton")
+        yes_button_4.place(x=280, y=375)
+
+        no_button_4 = ttk.Radiobutton(self, variable=self.qs4, value=0, text="No", style="Custom.TRadiobutton")
+        no_button_4.place(x=370, y=375)
