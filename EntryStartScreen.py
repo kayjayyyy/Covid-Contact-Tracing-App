@@ -71,3 +71,13 @@ class StartScreen(tk.Tk):
 
         style = ttk.Style()
         style.configure("Custom.TRadiobutton", background="#E3DAFF", fg="black", font=("Source Sans Pro", 9))
+        
+        # Symptoms no.1 Fever
+        symptoms_1_label = tk.Label(self, text="Fever or chills?", font=("Source Sans Pro", 11, "bold"), background="#E3DAFF")
+        symptoms_1_label.place(x=80, y=285)
+
+        yes_button_1 = ttk.Radiobutton(self, variable=self.qs1, value=1, text="Yes", style="Custom.TRadiobutton")
+        yes_button_1.place(x=280, y=285)
+
+        no_button_1 = ttk.Radiobutton(self, variable=self.qs1, value=0, text="No", style="Custom.TRadiobutton")
+        no_button_1.place(x=370, y=285)
