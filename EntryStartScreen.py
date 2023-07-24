@@ -217,3 +217,10 @@ class StartScreen(tk.Tk):
         response = csv.writer(file)
         response.writerow(data)
         file.close()
+        
+        # Clear info in entry box
+        self.full_name_entry.delete(0, 'end')
+        self.age_entry.delete(0, 'end')
+        self.phone_number_entry.delete(0, 'end')
+        self.email_entry.delete(0, 'end')
+        self.address_entry.delete(0, 'end')
