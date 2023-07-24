@@ -240,3 +240,9 @@ class StartScreen(tk.Tk):
         self.qs8.set(0)
         self.qs9.set(0)
         self.qs10.set(0)
+        
+        self.success_window_message()
+        
+if __name__ == "__main__":
+    entry = StartScreen()
+    entry.mainloop()
