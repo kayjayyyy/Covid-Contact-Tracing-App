@@ -196,13 +196,16 @@ class StartScreen(tk.Tk):
         go_back_to_start = tk.Button(self, text="Back", command=self.to_start_screen)
         go_back_to_start.place(x=260, y=750)
     
+    # Define back to start screen
     def to_start_screen(self):
         self.destroy()
-        
+
+    # Define success window message
     def success_window_message(self):
         messagebox.showinfo("Thank you!", "Your response has been successfully saved")
         self.destroy()
-        
+    
+    # Define submit responses
     def submit_response(self):
         full_name = self.full_name_entry.get()
         age = self.age_entry.get()
@@ -211,7 +214,8 @@ class StartScreen(tk.Tk):
         address = self.address_entry.get()
         covid_symptoms = ["No" if value == 0 else "Yes" for value in [self.qs1.get(), self.qs2.get(), self.qs3.get(), self.qs4.get(),
                 self.qs5.get(), self.qs6.get(), self.qs7.get(), self.qs8.get(), self.qs9.get(), self.qs10.get()]]
-            
+        
+        # Write/save to csv file 
         data = [full_name, age, phone_number, email, address + covid_symptoms]
         file = open("Responses.csv", mode="a", newline="")
         response = csv.writer(file)
