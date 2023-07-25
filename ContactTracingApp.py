@@ -31,3 +31,9 @@ class MainScreen(tk.Tk):
         instruction_2 = tk.Label(self, text="had with somebody who might be a COVID-19 virus carrier.", font=("Source Sans Pro", 11), background="#E3DAFF")
         instruction_2.place(x=53, y=310)
         
+        # Description
+        description = tk.Label(self, text="This Contact Tracing App will aid in finding those", font=("Source Sans Pro", 12, "bold"), background="#E3DAFF")
+        description.place(x=65, y=380)
+        
+        description = tk.Label(self, text="who are at risk of viral exposure.", font=("Source Sans Pro", 12, "bold"), background="#E3DAFF")
+        description.place(x=120, y=400)
