@@ -39,5 +39,5 @@ class MainScreen(tk.Tk):
         description.place(x=120, y=400)
         
         # Start button to entry/add response
-        Start_button = tk.Button(self, text="Start", command=self.open_add_entry, height=2, width=14)
+        Start_button = tk.Button(self, text="Start", command=self.open_add_response, height=2, width=14)
         Start_button.place(x=200, y=495)
