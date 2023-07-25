@@ -37,3 +37,7 @@ class MainScreen(tk.Tk):
         
         description = tk.Label(self, text="who are at risk of viral exposure.", font=("Source Sans Pro", 12, "bold"), background="#E3DAFF")
         description.place(x=120, y=400)
+        
+        # Start button to entry/add response
+        Start_button = tk.Button(self, text="Start", command=self.open_add_entry, height=2, width=14)
+        Start_button.place(x=200, y=495)
