@@ -43,7 +43,8 @@ class SearchEntry(tk.Tk):
         # Text widget to display results
         self.result = tk.Text(self, width=50, height=18, wrap=tk.WORD, bg="#E3DAFF")
         self.result.place(x=46, y=290)
-        
+    
+    # Define search and open csv file    
     def search(self):
         search_term = self.search_entry.get()
         if search_term:
@@ -58,7 +59,8 @@ class SearchEntry(tk.Tk):
                             break 
 
             self.display_results(search_results)
-            
+    
+    # Define display result to display the entered name        
     def display_results(self, results):
         self.result.delete(1.0, tk.END)
         
@@ -81,7 +83,8 @@ class SearchEntry(tk.Tk):
                 self.result.insert(tk.END, f"Have you had exposure to a probable or confirmed case in the last 14 days? {', '.join(row[14:15])}\n")
                 
             self.result.insert(tk.END, "\n")
-            
+        
+        # If no result found, display there are no matches
         if not results:
             self.result.insert(tk.END, "We're sorry. There are no matches.")
             

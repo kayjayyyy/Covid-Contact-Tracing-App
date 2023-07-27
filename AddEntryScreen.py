@@ -15,6 +15,7 @@ class StartScreen(tk.Tk):
         self.geometry("500x800")
         self.configure(bg="#E3DAFF")
 
+        # Title
         title = tk.Label(self, text="COVID CONTACT TRACING FORM", font=("Source Sans Pro", 15, "bold"), bg="#E4CCB4")
         title.place(x=83, y=20)
         
