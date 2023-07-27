@@ -28,3 +28,11 @@ class SearchEntry(tk.Tk):
         self.search_entry = tk.Entry(self, width=45)
         self.search_entry.place(x=130, y=233)
         
+        # Search button
+        search_button = tk.Button(self, text="Search", command=self.search)
+        search_button.place(x=415, y=230)
+
+        # Back button
+        back_to_main_button = tk.Button(self, text="Back", command=self.back_to_main)
+        back_to_main_button.place(x=195, y=680)
+        
