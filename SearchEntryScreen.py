@@ -20,3 +20,11 @@ class SearchEntry(tk.Tk):
         
         instruction_2 = tk.Label(self, text="had with somebody who might be a COVID-19 virus carrier.", font=("Source Sans Pro", 11, "bold"), background="#E3DAFF")
         instruction_2.place(x=40, y=150)
+        
+        # Search label and entry box
+        search_entry = tk.Label(self, text="Search by Name:", bg="#E3DAFF")
+        search_entry.place(x=30, y=233)
+
+        self.search_entry = tk.Entry(self, width=45)
+        self.search_entry.place(x=130, y=233)
+        
