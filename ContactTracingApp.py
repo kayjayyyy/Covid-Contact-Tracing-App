@@ -41,3 +41,11 @@ class MainScreen(tk.Tk):
         # Start button to entry/add response
         Start_button = tk.Button(self, text="Start", command=self.open_add_response, height=2, width=14)
         Start_button.place(x=200, y=495)
+        
+        # Search entry button
+        SearchEntryButton = tk.Button(self, text="Search Entry", command=self.open_search_entry, height=2, width=14)
+        SearchEntryButton.place(x=270, y=495)
+        
+        # Close button
+        close = tk.Button(self, text="Close", command=self.close_window)
+        close.place(x=230, y=750)
