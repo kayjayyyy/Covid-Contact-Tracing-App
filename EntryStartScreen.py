@@ -230,16 +230,16 @@ class StartScreen(tk.Tk):
         self.address_entry.delete(0, 'end')
         
         # Clear radiobuttons
-        self.qs1.set(0)
-        self.qs2.set(0)
-        self.qs3.set(0)
-        self.qs4.set(0)
-        self.qs5.set(0)
-        self.qs6.set(0)
-        self.qs7.set(0)
-        self.qs8.set(0)
-        self.qs9.set(0)
-        self.qs10.set(0)
+        self.qs1.set('')
+        self.qs2.set('')
+        self.qs3.set('')
+        self.qs4.set('')
+        self.qs5.set('')
+        self.qs6.set('')
+        self.qs7.set('')
+        self.qs8.set('')
+        self.qs9.set('')
+        self.qs10.set('')
         
         self.success_window_message()
         
