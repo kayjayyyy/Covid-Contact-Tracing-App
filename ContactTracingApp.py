@@ -3,7 +3,7 @@
 # Final Project - Covid Contact Tracing App
 
 import tkinter as tk
-from EntryStartScreen import StartScreen
+from AddEntryScreen import StartScreen
 
 class MainScreen(tk.Tk):
     
