@@ -4,6 +4,7 @@
 
 import tkinter as tk
 from AddEntryScreen import StartScreen
+from SearchEntryScreen import SearchEntry
 
 class MainScreen(tk.Tk):
     
