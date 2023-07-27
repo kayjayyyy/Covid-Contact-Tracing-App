@@ -36,3 +36,7 @@ class SearchEntry(tk.Tk):
         back_to_main_button = tk.Button(self, text="Back", command=self.back_to_main)
         back_to_main_button.place(x=195, y=680)
         
+        # Close button
+        close = tk.Button(self, text="Close", command=self.destroy)
+        close.place(x=265, y=680)
+    
