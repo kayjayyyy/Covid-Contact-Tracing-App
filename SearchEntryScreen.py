@@ -48,7 +48,7 @@ class SearchEntry(tk.Tk):
         search_term = self.search_entry.get()
         if search_term:
             search_results = []
-            with open('Responses.csv', 'r', newline='') as csvfile:
+            with open('D:\OOP-Final Project\Covid-Contact-Tracing-App\Responses.csv', 'r', newline='') as csvfile:
                 reader = csv.reader(csvfile)
                 header = next(reader)
                 for row in reader:
