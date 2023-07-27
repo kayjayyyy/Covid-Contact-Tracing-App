@@ -50,3 +50,20 @@ class MainScreen(tk.Tk):
         # Close button
         close = tk.Button(self, text="Close", command=self.close_window)
         close.place(x=230, y=750)
+        
+    def open_add_entry(self):
+        self.destroy()
+        entry = StartScreen()
+        entry.mainloop()
+        
+    def open_search_entry(self):
+        self.destroy()
+        search = SearchEntry()
+        search.mainloop()
+        
+    def close_window(self):
+        self.destroy()
+        
+if __name__ == "__main__":
+    app = MainScreen()
+    app.mainloop()
