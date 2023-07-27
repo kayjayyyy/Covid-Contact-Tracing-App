@@ -61,3 +61,26 @@ class SearchEntry(tk.Tk):
             
     def display_results(self, results):
         self.result.delete(1.0, tk.END)
+        
+        for row in results:
+            if len(row) > 0:
+                self.result.insert(tk.END, f"Full Name: {', '.join(row[0:1])}\n")
+                self.result.insert(tk.END, f"Age: {', '.join(row[1:2])}\n")
+                self.result.insert(tk.END, f"Phone number: {', '.join(row[2:3])}\n")
+                self.result.insert(tk.END, f"Email: {', '.join(row[3:4])}\n")
+                self.result.insert(tk.END, f"Address: {', '.join(row[4:5])}\n")
+                self.result.insert(tk.END, f"Fever? {', '.join(row[5:6])}\n")
+                self.result.insert(tk.END, f"Loss of taste? {', '.join(row[6:7])}\n")
+                self.result.insert(tk.END, f"Loss of smell? {', '.join(row[7:8])}\n")
+                self.result.insert(tk.END, f"Cough or sore throat? {', '.join(row[8:9])}\n")
+                self.result.insert(tk.END, f"Shortness of Breath? {', '.join(row[9:10])}\n")
+                self.result.insert(tk.END, f"Difficulty of breathing? {', '.join(row[10:11])}\n")
+                self.result.insert(tk.END, f"Nausea or vomiting? {', '.join(row[11:12])}\n")
+                self.result.insert(tk.END, f"Musle or body pains? {', '.join(row[12:13])}\n")
+                self.result.insert(tk.END, f"Headache? {', '.join(row[13:14])}\n")
+                self.result.insert(tk.END, f"Have you had exposure to a probable or confirmed case in the last 14 days? {', '.join(row[14:15])}\n")
+                
+            self.result.insert(tk.END, "\n")
+            
+        if not results:
+            self.result.insert(tk.END, "We're sorry. There are no matches.")
