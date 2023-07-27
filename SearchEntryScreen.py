@@ -40,3 +40,6 @@ class SearchEntry(tk.Tk):
         close = tk.Button(self, text="Close", command=self.destroy)
         close.place(x=265, y=680)
     
+        # Text widget to display results
+        self.result = tk.Text(self, width=50, height=18, wrap=tk.WORD, bg="#E3DAFF")
+        self.result.place(x=46, y=290)
