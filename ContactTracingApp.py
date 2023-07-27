@@ -12,7 +12,7 @@ class MainScreen(tk.Tk):
         super().__init__()
 
         self.title("Contact Tracing App")
-        self.geometry("500x780")
+        self.geometry("500x800")
         self.configure(bg="#E3DAFF")
         self.pack_propagate(0)
         
