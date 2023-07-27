@@ -59,3 +59,5 @@ class SearchEntry(tk.Tk):
 
             self.display_results(search_results)
             
+    def display_results(self, results):
+        self.result.delete(1.0, tk.END)
