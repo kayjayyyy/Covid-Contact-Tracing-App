@@ -84,3 +84,13 @@ class SearchEntry(tk.Tk):
             
         if not results:
             self.result.insert(tk.END, "We're sorry. There are no matches.")
+            
+    def back_to_main(self):
+        self.destroy()
+        from ContactTracingApp import MainScreen
+        entry = MainScreen()
+        entry.mainloop()
+
+if __name__ == "__main__":
+    search = SearchEntry()
+    search.mainloop()
