@@ -43,3 +43,19 @@ class SearchEntry(tk.Tk):
         # Text widget to display results
         self.result = tk.Text(self, width=50, height=18, wrap=tk.WORD, bg="#E3DAFF")
         self.result.place(x=46, y=290)
+        
+    def search(self):
+        search_term = self.search_entry.get()
+        if search_term:
+            search_results = []
+            with open('Responses.csv', 'r', newline='') as csvfile:
+                reader = csv.reader(csvfile)
+                header = next(reader)
+                for row in reader:
+                    for value in row:
+                        if search_term.lower() in value.lower():
+                            search_results.append(row)
+                            break 
+
+            self.display_results(search_results)
+            
